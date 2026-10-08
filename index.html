@@ -4938,7 +4938,7 @@
 
         async function loadDealsFromBackend() {
             try {
-                const response = await fetch("http://localhost:5000/api/products");
+                const response = await fetch("https://new-grox.onrender.com/api/products");
 
                 const data = await response.json();
 
@@ -6968,7 +6968,7 @@
         /* ke deliverOtp() se lagega. Frontend same rahega.  */
         /* ================================================= */
 
-        const CUST_API = "http://localhost:5000/api/customers";
+        const CUST_API = "https://new-grox.onrender.com/api/customers";
         const CUST_SCREENS = ["custLoginScreen", "custOtpScreen", "custProfileScreen", "custAccountScreen"];
         let custMobileNo = "";
         let custResendTimer = null;
@@ -7252,7 +7252,7 @@
         /* ke deliverOtp() se. Frontend same rahega.         */
         /* ================================================= */
 
-        const BIZ_API = "http://localhost:5000/api/business-auth";
+        const BIZ_API = "https://new-grox.onrender.com/api/business-auth";
         let bizMobileNo = "";
         let bizSignupToken = "";
         let bizDealsCache = [];
